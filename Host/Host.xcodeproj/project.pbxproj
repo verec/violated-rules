@@ -19,6 +19,8 @@
 		F389D8581925703100624761 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F389D8401925703100624761 /* UIKit.framework */; };
 		F389D8601925703100624761 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F389D85E1925703100624761 /* InfoPlist.strings */; };
 		F389D8621925703100624761 /* HostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F389D8611925703100624761 /* HostTests.m */; };
+		F389D86E192572D100624761 /* NSString+PubSub.m in Sources */ = {isa = PBXBuildFile; fileRef = F389D86D192572D100624761 /* NSString+PubSub.m */; };
+		F389D8711925734C00624761 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F389D8701925734C00624761 /* DynamicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		F389D85D1925703100624761 /* HostTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HostTests-Info.plist"; sourceTree = "<group>"; };
 		F389D85F1925703100624761 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F389D8611925703100624761 /* HostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostTests.m; sourceTree = "<group>"; };
+		F389D86C192572D100624761 /* NSString+PubSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PubSub.h"; sourceTree = "<group>"; };
+		F389D86D192572D100624761 /* NSString+PubSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PubSub.m"; sourceTree = "<group>"; };
+		F389D86F1925734C00624761 /* DynamicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		F389D8701925734C00624761 /* DynamicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		F389D8301925703000624761 = {
 			isa = PBXGroup;
 			children = (
+				F389D86B192572D100624761 /* violated-rules */,
 				F389D8421925703100624761 /* Host */,
 				F389D85B1925703100624761 /* HostTests */,
 				F389D83B1925703000624761 /* Frameworks */,
@@ -142,6 +149,17 @@
 				F389D85E1925703100624761 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F389D86B192572D100624761 /* violated-rules */ = {
+			isa = PBXGroup;
+			children = (
+				F389D86C192572D100624761 /* NSString+PubSub.h */,
+				F389D86D192572D100624761 /* NSString+PubSub.m */,
+				F389D86F1925734C00624761 /* DynamicViewController.h */,
+				F389D8701925734C00624761 /* DynamicViewController.m */,
+			);
+			path = "violated-rules";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +257,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F389D86E192572D100624761 /* NSString+PubSub.m in Sources */,
 				F389D84D1925703100624761 /* AppDelegate.m in Sources */,
+				F389D8711925734C00624761 /* DynamicViewController.m in Sources */,
 				F389D8491925703100624761 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
